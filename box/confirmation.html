@@ -9,26 +9,11 @@
 
 <script>
 
-var url = window.location.search.substring(1).split('&');
+var url = window.location.search.substring(1).split('=');
+var cod = url[1];
 
-for (var i = 0; i < url.length; i++) {
-    var name = url[i].split('=');
-    console.log(name[1]);
-}
+window.location.href = "http://local.laravel.com/fileManager/admin/box?code=" + cod;
 
-/**function query_param(param) {
-    
-    /** for (var i = 0; i < varb.length; i++)
-    {
-        var name = varb[i].split('=');
-        if (name[0] == param)
-        {
-            return name[1];
-        }
-    }
-}​ **/
-
-// window.location.href = "http://stackoverflow.com";
 </script>
 </head>
 
