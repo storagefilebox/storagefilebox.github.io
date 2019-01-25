@@ -2,21 +2,24 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">  
-  <title>Box: Confirmation</title>
-
+    <meta charset="utf-8">  
+    <title>Box: Confirmation</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <head>
-<script type="">
+
+<script>
 
 var url = window.location.search.substring(1).split('&');
+
+for (var i = 0; i < url.length; i++) {
+    var name = url[i].split('=');
+    console.log(name);
+}
 
 console.log(url);
 
 /**function query_param(param) {
     
-
-    
-
     /** for (var i = 0; i < varb.length; i++)
     {
         var name = varb[i].split('=');
