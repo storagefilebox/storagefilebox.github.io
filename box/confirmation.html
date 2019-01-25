@@ -2,17 +2,18 @@
 
 function query_param (param)
 {
-    var urli = window.location.search.substring(1);
-    var varb = urli.split('&');
+    var url = window.location.search.substring(1).split('&');
 
-    for (var i = 0; i < varb.length; i++)
+    console.log(url);
+
+    /** for (var i = 0; i < varb.length; i++)
     {
         var name = varb[i].split('=');
         if (name[0] == param)
         {
             return name[1];
         }
-    }
+    } **/
 }​
 
 var code = query_param('code');
