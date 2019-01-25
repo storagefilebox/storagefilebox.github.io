@@ -1,3 +1,23 @@
 <script>
-  alert('confirm');
+
+function query_param (param)
+{
+    var urli = window.location.search.substring(1);
+    var varb = urli.split('&');
+
+    for (var i = 0; i < varb.length; i++)
+    {
+        var name = varb[i].split('=');
+        if (name[0] == param)
+        {
+            return name[1];
+        }
+    }
+}​
+
+var code = GetQueryStringParams('code');
+
+console.log(code);
+
+// window.location.href = "http://stackoverflow.com";
 </script>
