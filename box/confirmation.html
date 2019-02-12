@@ -7,16 +7,20 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <head>
 
-<script>
+<script  type="text/javascript">
 
 var url = window.location.search.substring(1).split('=');
 var cod = url[1];
 
-window.location.href = "http://local.laravel.com/fileManager/admin/box?code=" + cod;
+document.getElementById('code').value=cod; 
+
+// window.location.href = "http://local.laravel.com/fileManager/admin/box?code=" + cod;
 
 </script>
 </head>
 
-<body></body>
+<body>
+	Code: <input id="code" />
+</body>
 
 </html>
