@@ -16,6 +16,7 @@ $(function(){
 
 	console.log(cod);
 	$('#code').attr('value',cod);
+	$('#get').attr('href','http://local.laravel.com/fileManager/admin/box?code='+cod);
 });
 
 // document.getElementById('code').setAttribute('value',cod);
@@ -25,7 +26,7 @@ $(function(){
 </head>
 
 <body>
-	Code: <input id="code" />
+	Code: <input id="code" /> <a href="" id="get">GET</a>
 </body>
 
 </html>
